@@ -6,11 +6,9 @@ using System.Threading.Tasks;
 
 namespace Test.BD
 {
-    internal class BDClass
+    public class Grade
     {
         public int ID { get; set; }
-        public int UserID { get; set; }
-        public int Grade {  get; set; }
-        public string CorrectAnswer { get; set; }
+        public string NameGrade { get; set; }
     }
 }

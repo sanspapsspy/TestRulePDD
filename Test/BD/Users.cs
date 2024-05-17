@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Test.BD
 {
-    internal class UserClass
+    public class Users
     {
         public int ID { get; set; }
         public string Name { get; set; }

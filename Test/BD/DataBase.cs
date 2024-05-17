@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Media;
 using Microsoft.Data.SqlClient;
+using Microsoft.VisualBasic.ApplicationServices;
+using Test.Windows;
 
 namespace Test.BD
 {
@@ -52,6 +54,28 @@ namespace Test.BD
         {
             string sqlExpression = $"Inser TestResult (UserID , Grade ,CorrectAnswer) VALUES ('{bDClass.UserID}','{bDClass.Grade}','{bDClass.CorrectAnswer}')";
             return SendNonqueryReqest(sqlExpression) == 1;
+        }
+        public static bool TakeTestResult(BDClass bDClass) 
+        {
+            string sqlExpression = $"SELECT * FROM TestRusult WHERE UserID = \'{bDClass.UserID}\' , Grade = \'{bDClass.Grade}\' AND CorrectAbswers = \'{bDClass.CorrectAnswer}\'";
+            int count = 0;
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+
+                SqlCommand command = new SqlCommand(sqlExpression, connection);
+                SqlDataReader reader = command.ExecuteReader();
+
+                if (reader.HasRows) // если есть данные
+                {
+                    while (reader.Read()) // построчно считываем данные
+                    {
+                        count++;
+                    }
+                }
+                reader.Close();
+            }
+            return count > 0;
         }
     }
 }

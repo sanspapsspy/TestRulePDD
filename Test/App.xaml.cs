@@ -1,6 +1,7 @@
 ﻿using System.Configuration;
 using System.Data;
 using System.Windows;
+using Test.BD;
 
 namespace Test
 {
@@ -9,6 +10,15 @@ namespace Test
     /// </summary>
     public partial class App : Application
     {
+        [STAThread]
+        static void Main()
+        {
+            new AplicationContext();
+            App app = new App();
+            MainWindow window = new MainWindow();
+            window.Title = "Экзамен";
+            app.Run(window);
+        }
     }
 
 }

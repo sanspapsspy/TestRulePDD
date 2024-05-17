@@ -5,8 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Test.Windows"
         mc:Ignorable="d"
-        Title="MenuWind" Height="450" Width="800">
+        Title="MenuWind" Height="600" Width="800">
     <Grid>
-        
+        <StackPanel>
+            <StackPanel.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF9BFBC2" Offset="0.06"/>
+                    <GradientStop Color="#FFF36F6F" Offset="0.6"/>
+                </LinearGradientBrush>
+            </StackPanel.Background>
+
+        </StackPanel>
+        <Button Content="Тест" Margin="39,0,501,307" Background="#FFE80C0C" FontSize="30" Click="Button_Click_1"/>
+        <Button Content="Результаты" HorizontalAlignment="Left" Margin="588,10,0,307" Background="#FFE80C0C" Click="Button_Click" Width="212" FontSize="30"/>
+
     </Grid>
 </Window>

@@ -15,25 +15,13 @@ using System.Windows.Shapes;
 namespace Test.Windows
 {
     /// <summary>
-    /// Логика взаимодействия для MenuWind.xaml
+    /// Логика взаимодействия для QuestionAnswerWin.xaml
     /// </summary>
-    public partial class MenuWind : Window
+    public partial class QuestionAnswerWin : Window
     {
-        public MenuWind()
+        public QuestionAnswerWin()
         {
             InitializeComponent();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            TestRusult testRusult = new TestRusult();   
-            testRusult.Show();
-            this.Close();
-        }
-
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }

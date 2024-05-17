@@ -25,12 +25,21 @@ namespace Test
 
         private void BtnSignIn_Click(object sender, RoutedEventArgs e)
         {
-            //var authUser = BD.UserClass.context.User.ToList()
-            //    // Выбрали пользователя по условию
-            //    .Where(i => i.Login == TbLogin.Text && i.Password == TbPassword.Text).FirstOrDefault();
-            //MenuWind menuWind = new MenuWind();
-            //menuWind.Show();
-            //this.Close();
+            Users user = new Users();
+            user.Name = TbLogin.Text;
+            user.Password = TbPassword.Text;
+            var users = AplicationContext.contex.Users.Where(u => u.Name == user.Name);
+            if (users.Count() == 1)
+            {
+                CurrentUser.User = users.First();
+                MenuWind menuWind = new MenuWind();
+                menuWind.Show();
+                this.Close();
+            }
+            else
+            {
+                //написать что ошибка
+            }
         }
         private void BtnReGistrate_Click(object sender, RoutedEventArgs e)
         {
