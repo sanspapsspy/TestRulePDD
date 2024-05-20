@@ -16,8 +16,8 @@
             </StackPanel.Background>
 
         </StackPanel>
-        <Button Content="Тест" Margin="39,0,501,307" Background="#FFE80C0C" FontSize="30" Click="Button_Click_1"/>
-        <Button Content="Результаты" HorizontalAlignment="Left" Margin="588,10,0,307" Background="#FFE80C0C" Click="Button_Click" Width="212" FontSize="30"/>
+        <Button Content="Тест" Margin="0,0,540,307" Background="#FFE80C0C" FontSize="30" Click="Button_Click_1"/>
+        <Button Content="Результаты" HorizontalAlignment="Left" Margin="588,0,0,317" Background="#FFE80C0C" Click="Button_Click" Width="212" FontSize="30"/>
 
     </Grid>
 </Window>

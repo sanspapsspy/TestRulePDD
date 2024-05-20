@@ -9,6 +9,7 @@
     <Grid>
         <StackPanel>
             <DataGrid x:Name="Datas" d:ItemsSource="{d:SampleData ItemCount=10}" Background="#FFB37D7D" SelectionChanged="DataGrid_SelectionChanged" />
+            <Button Content="Назад" Click="Button_Click"/>
         </StackPanel>
     </Grid>
 </Window>

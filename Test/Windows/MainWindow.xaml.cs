@@ -38,7 +38,7 @@ namespace Test
             }
             else
             {
-                //написать что ошибка
+                MessageBox.Show("Не правильно попробуй ещё раз");
             }
         }
         private void BtnReGistrate_Click(object sender, RoutedEventArgs e)

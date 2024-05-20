@@ -21,7 +21,7 @@ namespace Test.BD
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Data Source=DESKTOP-QKDTUFV\\SQLEXPRESS;Initial Catalog = RulePDD3; Integrated Security = True; Encrypt=True;Trust Server Certificate=True;");
+            optionsBuilder.UseSqlServer("Data Source=DESKTOP-QKDTUFV\\SQLEXPRESS;Initial Catalog = RulePDD; Integrated Security = True; Encrypt=True;Trust Server Certificate=True;");
         }
     }
 }

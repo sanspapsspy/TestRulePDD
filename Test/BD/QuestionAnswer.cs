@@ -10,7 +10,9 @@ namespace Test.BD
     {
         public int ID {  get; set; }
         public string Question { get; set; }
-        public string TrueAnswer { get; set; }
-        public string FalseAnswer { get; set; }
+        public string CorrectAnswer { get; set; }
+        public string FakeAnswer { get; set; }
+        public string FakeAnswer2 { get; set; }
+        public string FakeAnswer3 { get; set; }
     }
 }

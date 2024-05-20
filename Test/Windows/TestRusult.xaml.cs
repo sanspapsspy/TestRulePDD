@@ -35,5 +35,12 @@ namespace Test.Windows
         {
             Datas.ItemsSource = range;
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            MenuWind menuWind = new MenuWind();
+            menuWind.Show();
+            this.Close();
+        }
     }
 }

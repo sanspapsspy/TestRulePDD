@@ -7,6 +7,13 @@
         mc:Ignorable="d"
         Title="QuestionAnswerWin" Height="450" Width="800">
     <Grid>
-        
+        <TextBlock x:Name="question" HorizontalAlignment="Center" Margin="0,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="53" Width="327"/>
+        <Label Content="Вопрос" HorizontalAlignment="Left" Margin="51,36,0,0" VerticalAlignment="Top" Width="67"/>
+        <Label Content="Варианты ответа" HorizontalAlignment="Left" Margin="33,155,0,0" VerticalAlignment="Top"/>
+        <RadioButton Content="" x:Name="answer1" HorizontalAlignment="Left" Margin="176,160,0,0" VerticalAlignment="Top" IsChecked="False" />
+        <RadioButton Content="" x:Name="answer2" HorizontalAlignment="Left" Margin="176,202,0,0" VerticalAlignment="Top" IsChecked="False"/>
+        <RadioButton Content="" x:Name="answer3" HorizontalAlignment="Left" Margin="176,242,0,0" VerticalAlignment="Top" IsChecked="False"/>
+        <RadioButton Content="" x:Name="answer4" HorizontalAlignment="Left" Margin="176,273,0,0" VerticalAlignment="Top" IsChecked="False"/>
+        <Button x:Name="confirm" Content="Выбрать" HorizontalAlignment="Left" Margin="335,326,0,0" VerticalAlignment="Top" Click="confirm_Click"/>
     </Grid>
 </Window>
