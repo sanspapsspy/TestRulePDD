@@ -14,4 +14,4 @@ namespace Test.BD
     }
 }
 
-//Data Source=DESKTOP-QKDTUFV\SQLEXPRESS;Initial Catalog=RulePDD2;Integrated Security=True;Encrypt=True;Trust Server Certificate=True
+//Data Source=DESKTOP-QKDTUFV\SQLEXPRESS;Initial Catalog=RulePDD;Integrated Security=True;Encrypt=True;Trust Server Certificate=True

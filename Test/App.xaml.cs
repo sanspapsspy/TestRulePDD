@@ -16,7 +16,7 @@ namespace Test
             new AplicationContext();
             App app = new App();
             MainWindow window = new MainWindow();
-            window.Title = "Экзамен";
+            window.Title = "Диплом";
             app.Run(window);
         }
     }
